@@ -65,3 +65,49 @@ function palindrome(str) {
 }
 palindrome("Evil OliVe");
 palindrome("Hello");
+
+
+// Assignment 5: JS function that takes a positive integer as a parameter and prints all the prime numbers less than or equal to that integer.
+
+function prime (num) {
+    let count=0
+    for (let i=1;i<=num;i++) {
+        if (num%i==0) {
+            count++;
+        }
+    }
+    if (count==2)
+    {
+        console.log("The number is prime")
+    } 
+    else{
+        console.log("The number is not prime")
+    }
+}
+prime(13)
+prime(12)
+
+
+// Assignment 6: JS function that simulates a simple calculator. Take two numbers and an operator (+, -, *, or /) as parameters.
+
+function calc (n1, n2, op) {
+    switch (op) {
+        case '+':
+            console.log("The sum of ",n1," and ",n2," is ",n1+n2)
+            break;
+        case '-':
+            console.log("The difference of ",n1," and ",n2," is ",n1-n2)
+            break;
+        case '*':
+            console.log("The product of ",n1," and ",n2," is ",n1*n2)
+            break;        
+        case '/':
+            console.log("The quotient of ",n1," and ",n2," is ",n1/n2)
+            break;   
+    }
+}
+calc(8,2,'+')
+calc(8,2,'-')
+calc(8,2,'*')
+calc(8,2,'/')
+
